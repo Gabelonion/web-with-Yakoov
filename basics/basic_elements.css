@@ -1,0 +1,57 @@
+/*The p in this case is the selector
+  The css declarations is for example the color specification
+  Every set of declarations between brackets is called a rule, and
+  the colection of them is the css file itself*/
+/*
+  Rule of an HTML element
+*/
+p, div.multi{
+  color: blue;
+  font-family: Arial,Times.sans-serif;
+  font-style: oblique;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 20px;
+}
+/*Rule applied for every element, this does not
+  mean inheritance, it is applied to every element
+  no matter where it is*/
+*{
+  text-align: right;
+}
+/*Rule using a relative font size*/
+body{
+  font-size: 110%;
+}
+/*rule of a class (class selector)*/
+.class_name{
+  color: grey;
+}
+/*rule of an id (id selector)*/
+#id_name{
+  color: yellow;
+}
+/*rule for various selectors: elements, classes or ids ()*/
+h1, #id2_name{
+  color: blue;
+}
+/*rule for elements together with classes, then,
+  this rule only works for the referenced element*/
+h3.combin_class{
+  color: cyan;
+  font-size: 32px;
+}
+/*rule of a direct child element, all the child elements
+  will be affected by this rule.
+*/
+div>h4{
+  color: red;
+}
+/*the h4 elements inside divs are affected*/
+/*rule of a child element*/
+div h3{
+  color: orange !important;
+}
+/* using important is an easy way to priorize these rules,
+   do not use it in every situation, only for necessary situations*/
