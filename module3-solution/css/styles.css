@@ -1,0 +1,112 @@
+/*General styling*/
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #FFCAAA;
+  font-family: 'Oxygen', sans-serif;
+}
+/*Header properties*/
+#header-nav {
+  background-color: #552000;
+  border-radius: 0;
+  border: 0;
+}
+#header-nav>div{
+  margin-left: 0;
+}
+/*Food,LLC styling*/
+.navbar-brand h1 {
+  font-family: 'Itim', cursive;
+  color: #AA9239;
+  font-size: 2em;
+  margin: -5px 0 0 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+  text-decoration: none;
+}
+/*Button with menu properties*/
+#nav-list {
+  margin-top: 0px;
+}
+#nav-list a {
+  color: #AA9239;
+  text-align: center;
+  background-color: #552000;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+/* Collapsed nav menu text */
+#collapsable-nav a {
+  font-size: 1.2em;
+}
+/*Header properties*/
+.main-content .page-heading{
+  font-family: 'Mitr', sans-serif;
+  text-align: center;
+  margin: auto;
+  color: #552000;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #FFCAAA;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -17px;
+}
+/*Container properties*/
+div.row div>h3{
+  color: #000;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+div.row div>a{
+  color: #fff;
+  font-weight: bold;
+}
+div.row div{
+  margin-top: 30px;
+  height: 700px;
+  width: 32%;
+  margin-left: 1%;
+  margin-bottom: 10px;
+  background-color: #846156;
+  overflow: auto;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  div.row div{
+    height: 450px;
+    width: 48%;
+    margin-left: 2%;
+  }
+  div.row div#sushi{
+    width: 98%;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  div.row div{
+    height: 450px;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+}

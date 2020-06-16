@@ -1,0 +1,13 @@
+/*General styling*/
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #FFCAAA;
+  font-family: 'Oxygen', sans-serif;
+}
+/*Header properties*/
+#header-nav {
+  background-color: #552000;
+  border-radius: 0;
+  border: 0;
+}
