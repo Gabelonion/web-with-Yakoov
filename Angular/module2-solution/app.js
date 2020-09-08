@@ -13,9 +13,6 @@ function ToBuyController(shoppingListCheckOffService) {
 
   toBuyList.items = shoppingListCheckOffService.getToBuyItems();
 
-  toBuyList.itemName = "";
-  toBuyList.itemQuantity = "";
-
   toBuyList.checkItem = function (itemIndex) {
     shoppingListCheckOffService.checkItem(itemIndex);
   };
@@ -28,9 +25,6 @@ function AlreadyBoughtController(shoppingListCheckOffService) {
   var boughtList = this;
 
   boughtList.items = shoppingListCheckOffService.getBoughtItems();
-
-  boughtList.itemName = "";
-  boughtList.itemQuantity = "";
 
 }
 
